@@ -1,16 +1,7 @@
+import Routes from './routes/routes';
+
 function App() {
-  return (
-    <div className="min-h-screen bg-gray-100 flex items-center justify-center">
-      <div className="text-center">
-        <h1 className="text-4xl font-bold text-blue-600 mb-4">
-          Hello Tailwind!
-        </h1>
-        <p className="text-gray-600">
-          Tailwind CSS sudah berhasil di-setup
-        </p>
-      </div>
-    </div>
-  )
+  return <Routes />;
 }
 
 export default App

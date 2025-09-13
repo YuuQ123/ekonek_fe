@@ -1,0 +1,1 @@
+//Redux slice + async thunk untuk fetch API

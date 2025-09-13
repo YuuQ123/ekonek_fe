@@ -1,0 +1,1 @@
+// Konstanta global (misalnya warna, API base URL
