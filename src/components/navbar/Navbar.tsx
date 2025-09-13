@@ -80,17 +80,17 @@ const Navbar: React.FC = () => {
           />
           
           {/* Sidebar */}
-          <div className="fixed right-0 top-0 h-full w-80 bg-white shadow-xl transform transition-transform duration-300 ease-in-out">
+          <div className="fixed right-0 top-0 h-full w-72 sm:w-80 md:w-96 bg-white shadow-xl transform transition-transform duration-300 ease-in-out">
             <div className="flex flex-col h-full">
               {/* Header */}
-              <div className="flex items-center justify-between p-4 border-b border-gray-200">
+              <div className="flex items-center justify-between p-3 sm:p-4 border-b border-gray-200">
                 <div className="flex items-center">
                   <img 
                     src="/images/ekonek_logo.png" 
                     alt="EKONEK" 
-                    className="h-6 w-auto mr-2"
+                    className="h-5 sm:h-6 w-auto mr-2"
                   />
-                  <span className="text-xl font-bold text-black">
+                  <span className="text-lg sm:text-xl font-bold text-black">
                     EKONEK
                   </span>
                 </div>
@@ -98,31 +98,31 @@ const Navbar: React.FC = () => {
                   onClick={toggleMobileMenu}
                   className="text-black hover:text-[#FF9809] focus:outline-none transition-colors duration-200"
                 >
-                  <svg className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <svg className="h-5 sm:h-6 w-5 sm:w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M6 18L18 6M6 6l12 12" />
                   </svg>
                 </button>
               </div>
               
               {/* Navigation Links */}
-              <div className="flex-1 px-4 py-6 space-y-4">
+              <div className="flex-1 px-3 sm:px-4 py-4 sm:py-6 space-y-3 sm:space-y-4">
                 <a 
                   href="/" 
-                  className="text-black hover:text-[#FF9809] block px-3 py-3 text-lg font-medium transition-colors duration-200 rounded-lg hover:bg-gray-50"
+                  className="text-black hover:text-[#FF9809] block px-3 py-2 sm:py-3 text-base sm:text-lg font-medium transition-colors duration-200 rounded-lg hover:bg-gray-50"
                   onClick={toggleMobileMenu}
                 >
                   Home
                 </a>
                 <a 
                   href="/service" 
-                  className="text-black hover:text-[#FF9809] block px-3 py-3 text-lg font-medium transition-colors duration-200 rounded-lg hover:bg-gray-50"
+                  className="text-black hover:text-[#FF9809] block px-3 py-2 sm:py-3 text-base sm:text-lg font-medium transition-colors duration-200 rounded-lg hover:bg-gray-50"
                   onClick={toggleMobileMenu}
                 >
                   Service
                 </a>
                 <a 
                   href="/contact" 
-                  className="text-black hover:text-[#FF9809] block px-3 py-3 text-lg font-medium transition-colors duration-200 rounded-lg hover:bg-gray-50"
+                  className="text-black hover:text-[#FF9809] block px-3 py-2 sm:py-3 text-base sm:text-lg font-medium transition-colors duration-200 rounded-lg hover:bg-gray-50"
                   onClick={toggleMobileMenu}
                 >
                   Contact
@@ -130,8 +130,8 @@ const Navbar: React.FC = () => {
               </div>
               
               {/* Login Button */}
-              <div className="p-4 border-t border-gray-200">
-                <button className="w-full bg-transparent border border-gray-300 hover:bg-[#FF9809] hover:border-[#FF9809] text-black hover:text-white font-medium py-3 px-6 rounded-full transition-colors duration-200">
+              <div className="p-3 sm:p-4 border-t border-gray-200">
+                <button className="w-full bg-transparent border border-gray-300 hover:bg-[#FF9809] hover:border-[#FF9809] text-black hover:text-white font-medium py-2 sm:py-3 px-4 sm:px-6 rounded-full transition-colors duration-200 text-sm sm:text-base">
                   Login
                 </button>
               </div>
