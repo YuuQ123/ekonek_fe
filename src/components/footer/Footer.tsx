@@ -2,7 +2,7 @@ import React from 'react';
 
 const Footer: React.FC = () => {
   return (
-    <footer className="w-full">
+    <footer id="contact" className="w-full">
       {/* Top Section - Orange-Brown Background */}
       <div className="bg-orange-600 py-6 sm:py-8 md:py-12 px-4 sm:px-6 lg:px-8">
         <div className="max-w-7xl mx-auto">
